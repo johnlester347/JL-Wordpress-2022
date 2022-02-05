@@ -49,7 +49,7 @@ function bootstrap2wordpress_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary Menu', 'bootstrap2wordpress' ),
+			'primary' => esc_html__( 'Primary Menu', 'bootstrap2wordpress' ),
 		)
 	);
 
@@ -175,3 +175,19 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// remove_all_filters( 'wp_nav_menu_args' );
+
+// add_filter( 'pre_wp_nav_menu', 'smyles_dump_nav_menu_args', 9999, 2 );
+
+// function smyles_dump_nav_menu_args( $null, $args ){
+//     ob_start();
+
+//     echo '<pre>';
+//     var_dump($args);
+//     echo '</pre>';
+
+//     $content = ob_get_contents();
+//     ob_end_clean();
+//     return $content;
+// }

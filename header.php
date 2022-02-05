@@ -79,7 +79,7 @@
                                     'theme_location' => 'primary',
                                     'container'      => 'nav',
                                     'container_class' => 'navbar-collapse collapse',
-                                    'menu_class'     => 'nav navbar-nav navbar-right'
+                                    'menu_class'     => 'nav navbar-nav navbar-right',
                                 )
                             );
                         ?>

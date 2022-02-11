@@ -191,3 +191,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 //     ob_end_clean();
 //     return $content;
 // }
+
+add_image_size('blog-small', 200, 200, false);

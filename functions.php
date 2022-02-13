@@ -50,6 +50,7 @@ function bootstrap2wordpress_setup() {
 	register_nav_menus(
 		array(
 			'primary' => esc_html__( 'Primary Menu', 'bootstrap2wordpress' ),
+			'footer' => esc_html__( 'Footer Menu', 'bootstrap2wordpress' ),
 		)
 	);
 

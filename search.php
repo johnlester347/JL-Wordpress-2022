@@ -10,20 +10,25 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+    <?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
+    <section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">
+        <h1 class="page-title">
+            <?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'bootstrap2wordpress' ), '<span>' . get_search_query() . '</span>' );
 					?>
-				</h1>
-			</header><!-- .page-header -->
+        </h1>
+    </section>
 
-			<?php
+
+    <div class="container">
+        <div class="row" id="primary">
+            <main id="content" class="col-sm-8">
+
+                <?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -45,9 +50,17 @@ get_header();
 
 		endif;
 		?>
+            </main>
 
-	</main><!-- #main -->
+            <!-- SIDEBAR
+			================================================== -->
+            <aside class="col-sm-4">
+                <?php get_sidebar(); ?>
+            </aside>
+        </div>
+    </div>
+
+</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

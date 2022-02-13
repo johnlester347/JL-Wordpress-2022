@@ -45,7 +45,7 @@
             </nav>
         </div><!-- end col -->
         <div class="col-sm-3">
-            <p class="pull-right">&copy; 2014 Brad Hussey</p>
+            <p class="pull-right">&copy; 2022 John Lester Pamplona</p>
         </div><!-- end col -->
     </div><!-- container -->
 </footer>

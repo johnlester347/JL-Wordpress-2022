@@ -1069,3 +1069,11 @@ footer li.signup-link a:hover {
 .logged-in .navbar-fixed-top {
     top: 32px;
 }
+
+.page-template-page-resources-php .feature-image {
+    margin-top: 50px;
+}
+
+.archive #primary .feature-image {
+    margin-top: -40px;
+}
